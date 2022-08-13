@@ -5,3 +5,7 @@ class BaseModel(PydanticBaseModel):
     class Config:
         validate_assignment = True
         arbitrary_types_allowed = True
+
+
+class Time:
+    pass

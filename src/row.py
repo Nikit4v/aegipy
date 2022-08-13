@@ -1,11 +1,14 @@
+from numpy._typing import NDArray
+
+from src.common_datatypes import Time
+
+
 class Row:
-    Layer
-    Start
-    End
-    Style
-    Name
-    MarginL
-    MarginR
-    MarginV
-    Effect
-    Text
+    layer: int
+    start: Time
+    end: Time
+    style: Time
+    name: str
+    margin: NDArray[float]
+    effect: str
+    text: str
